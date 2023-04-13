@@ -135,7 +135,6 @@
 
 
 		<!-- open left side panel -->
-
 		<div id="left-panel">
 
 			<div id="filemanager">
@@ -157,6 +156,7 @@
 				</div>
 
 				<div class="tree">
+
 					<ol>
 
 					</ol>
@@ -1452,10 +1452,19 @@
 
 
 
+		<script id="vvveb-filemanager-folder" type="text/html">
+	<li data-folder="{%=folder%}" class="folder">
+		<label for="{%=folder%}"><span>{%=folderTitle%}</span></label>
+		 <input type="checkbox" id="{%=folder%}" />
+		<ol></ol>
+	</li>
+</script>
+
 
 		<script id="vvveb-filemanager-folder" type="text/html">
 	<li data-folder="{%=folder%}" class="folder">
-		<label for="{%=folder%}"><span>{%=folderTitle%}</span></label> <input type="checkbox" id="{%=folder%}" />
+		<label for="{%=folder%}"><span>{%=folderTitle%}</span></label>
+		 <input type="checkbox" id="{%=folder%}" />
 		<ol></ol>
 	</li>
 </script>
@@ -1842,6 +1851,8 @@ Unzip the latest ckeditor release zip from https://github.com/ckeditor/ckeditor4
 
 			let pages =
 				[
+					{ name: "moshar-Soup", title: "Mosha", url: "demo/mosha/index.html", file: "demo/mosha/index.html", assets: ['demo/mosha/mosha.css'] },
+
 					{ name: "narrow-jumbotron", title: "Jumbotron", url: "demo/narrow-jumbotron/index.html", file: "demo/narrow-jumbotron/index.html", assets: ['demo/narrow-jumbotron/narrow-jumbotron.css'] },
 					{ name: "landing-page", title: "Landing page", url: "demo/landing/index.html", file: "demo/landing/index.html", assets: ['demo/landing/css/style.css'] },
 					{ name: "album", title: "Album", url: "demo/album/index.html", file: "demo/album/index.html", folder: "content", assets: ['demo/album/album.css'] },
