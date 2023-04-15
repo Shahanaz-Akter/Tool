@@ -10,7 +10,7 @@
 	<meta name="author" content="">
 	<link rel="icon" href="favicon.ico">
 	<base href="">
-	<title>Web Builder Tool</title>
+	<title>Dragon Web Builder Tool</title>
 
 	<link href="css/editor.css" rel="stylesheet">
 </head>
@@ -937,6 +937,7 @@
 		</div>
 		<!-- close right side panel -->
 
+		<!-- open bottom side panel -->
 		<div id="bottom-panel">
 
 			<div>
@@ -978,9 +979,25 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- close bottom side panel -->
 
 		<!-- templates -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		<script id="vvveb-input-textinput" type="text/html">
 
@@ -1851,7 +1868,8 @@ Unzip the latest ckeditor release zip from https://github.com/ckeditor/ckeditor4
 
 			let pages =
 				[
-					{ name: "moshar-Soup", title: "Mosha", url: "demo/mosha/index.html", file: "demo/mosha/index.html", assets: ['demo/mosha/mosha.css'] },
+					{ name: "Template1", title: "Template1", url: "demo/template1/index.html", file: "demo/template1/index.html", assets: ['demo/template1/template1.css'] },
+					{ name: "Template2", title: "Template2", url: "demo/template2/index.html", file: "demo/template2/index.html", assets: ['demo/template2/template2.css'], },
 
 					{ name: "narrow-jumbotron", title: "Jumbotron", url: "demo/narrow-jumbotron/index.html", file: "demo/narrow-jumbotron/index.html", assets: ['demo/narrow-jumbotron/narrow-jumbotron.css'] },
 					{ name: "landing-page", title: "Landing page", url: "demo/landing/index.html", file: "demo/landing/index.html", assets: ['demo/landing/css/style.css'] },
@@ -1902,7 +1920,12 @@ Unzip the latest ckeditor release zip from https://github.com/ckeditor/ckeditor4
 					Vvveb.Gui.toggleRightColumn();
 				}
 			});
+			console.log(pages);
 		</script>
+
+
+
+
 </body>
 
 </html>
